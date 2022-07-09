@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Suburb {
+public class SuburbDto {
   private String name;
   private Integer postcode;
 }
