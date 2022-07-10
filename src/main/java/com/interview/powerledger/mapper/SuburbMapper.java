@@ -3,7 +3,6 @@ package com.interview.powerledger.mapper;
 import com.interview.powerledger.dto.SuburbDto;
 import com.interview.powerledger.model.Suburb;
 import org.mapstruct.Mapper;
-import org.springframework.stereotype.Component;
 
 @Mapper(componentModel = "spring")
 public interface SuburbMapper {

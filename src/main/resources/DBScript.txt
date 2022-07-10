@@ -2,5 +2,5 @@ CREATE TABLE suburb (
   id mediumint(9) NOT NULL AUTO_INCREMENT,
   name char(30) NOT NULL,
   postcode mediumint(9) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (id)
 )
