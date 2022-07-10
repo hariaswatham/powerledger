@@ -3,6 +3,7 @@ package com.interview.powerledger.controller;
 import com.interview.powerledger.dto.SuburbDto;
 import com.interview.powerledger.service.SuburbService;
 import java.util.List;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,6 +25,11 @@ public class SuburbController {
   @PostMapping("/suburb")
   public void add(@RequestBody SuburbDto suburb){
     suburbService.add(suburb);
+  }
+
+  @GetMapping("/suburbs")
+  public List<SuburbDto> getAll(){
+    return suburbService.getAll();
   }
 
 }

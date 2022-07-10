@@ -28,4 +28,9 @@ public class SuburbService {
   public void add(SuburbDto suburbDto) {
     suburbRepository.save(suburbMapper.toEntity(suburbDto));
   }
+
+  public List<SuburbDto> getAll() {
+    List<Suburb> suburbs = suburbRepository.findAll();
+    return suburbs.stream().map(suburbMapper::toDto).collect(Collectors.toList());
+  }
 }
